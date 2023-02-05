@@ -12,5 +12,14 @@
 </head>
 <body>
   <div id="root"></div>
+  <div id="preloader"></div>
+  <script>
+    let preloader = document.querySelector('#preloader')
+    if (preloader) {
+      window.addEventListener('load', () => {
+        preloader.remove()
+      });
+    }
+  </script>
 </body>
 </html>
