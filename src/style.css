@@ -47,7 +47,7 @@
     top: calc(50% - 90px);
     left: calc(50% - 90px);
     border: 5px solid transparent;
-    border-top-color: white;
+    border-top-color: #ba0ba8;
     border-bottom-color: rgb(255, 221, 2);
     border-radius: 50%;
     width: 150px;
