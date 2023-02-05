@@ -130,42 +130,11 @@ aside .slide-icon{
 .hamburger .three{
     width: 50%;
 }
-/* .hamburger {
-
-    animation: hideAnimation 0s ease-in 5s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes hideAnimation {
-    to {
-      visibility: hidden;
-      width: 0;
-      height: 0;
-    }
-  } */
-
-/* Responsiveness for Navbar */
-@media only screen and (max-width: 900px) {   
-    nav .logo{
-        font-size: 25px;
-    } 
-    .hamburger{
-        display: flex;
-    }
-    nav ul{
-        display: none;
-    }
-    /* nav span{
-        display: block;
-    } */
-}
-
 /* Header Section */
 header{
     background-color: #56004e;
     background-image: linear-gradient(135deg, #56004e 0%, #572a06 100%);
     height:100vh;
-
     width: 100%;
     padding-top: 100px !important;
     display: flex;
@@ -194,27 +163,6 @@ header .header-img{
 }
 .header-img img{
     width: 100%;
-}
-@media only screen and (min-width: 750px) and (max-width: 900px){
-    .header-img img{
-        display: none;
-    }
-    .process-section{
-        height: 100vh !important;
-    }
-}
-/* Responsiveness for Header Section */
-@media only screen and (max-width: 900px) {
-    header{
-        display: grid;
-        /* flex-wrap: wrap ; */
-    }   
-    header .header-text{
-        margin-top: 0px;
-    }
-    .header-text h1{
-        font-size: 50px;
-    }
 }
 
 .cloths-section{
@@ -270,47 +218,7 @@ header .header-img{
 .cloths-section .clothes-text{
     font-size: 30px;
 }
-/* Responsive Mobile View for Clothes Section */
-@media only screen and (max-width: 420px) {
-    .cloths-section {
-        height: fit-content;
 
-    }
-    .section-header{
-        font-size: 50px;
-        top: -30px;
-    }
-    .cloths-section .cards{
-        flex-direction: column;
-        overflow-x: hidden;
-    }
-    .cloths-section .cards .text{
-        font-size: 25px;
-        margin-top: 30px;
-    }
-    /* .section-text{
-        display: none;
-    } */
-}
-/* Responsive Tablet View for Clothes Section */
-@media only screen and (min-width: 421px) and (max-width: 900px) {
-    .cloths-section {
-        height: fit-content;
-
-    }
-    .section-header{
-        font-size: 50px;
-        top: -30px;
-    }
-    .cloths-section .cards{
-        overflow-x: hidden;
-    }
-    .cloths-section .cards .text{
-        font-size: 30px;
-        margin-top: 30px;
-        margin-left: 50px;
-    }
-}
 /* Swiper */
 .swiper {
     width: 300px;
@@ -347,32 +255,6 @@ header .header-img{
     top: 10rem;
     z-index: 3;
 }
-/* Responsive Mobile View for Story Section */
-@media only screen and (max-width: 420px) {
-    .story img{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 70%;
-        top: 33rem;
-    }
-    .section-text{
-        padding-top: 10px;
-    }
-}
-/* Responsive Tablet View for Story Section */
-@media only screen and (min-width: 421px) and (max-width: 900px) {
-    .story img{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 50%;
-        top: 15rem;
-    }
-    .section-text{
-        padding-left: 0px;
-    }
-}
 .process-section{
     position: relative;
     height: 40vh;
@@ -385,42 +267,6 @@ header .header-img{
     padding: 80px 0px;
     z-index: 6;
     position: absolute;
-}
-/* Responsive Mobile View for Clothes Section */
-@media only screen and (max-width: 420px) {
-    .process-section{
-        height: fit-content;
-    }
-    .process-section .text{
-        position: relative;
-    }
-    .container{
-        flex-direction: column;
-    }
-
-    .section-form form .form-flex{
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    input{
-        padding: 0px 5px;
-        flex: 1;
-        height: 50px;
-    }
-    textarea{
-        margin: 0% !important;
-    }
-    form button{
-        width: 70%;
-        margin-right: auto !important;
-    }
-}
-/* Responsive Tablet View for Clothes Section */
-@media only screen and (min-width: 421px) and (max-width: 900px) {
-    .process-section{
-        height: 32vh;
-    }
 }
 .contact-section{
     padding:30px;
@@ -526,4 +372,156 @@ footer{
 a{
     color: white !important;
     text-decoration: none;
+}
+/* Responsiveness for Navbar */
+@media only screen and (max-width: 900px) {   
+    nav .logo{
+        font-size: 25px;
+    } 
+    .hamburger{
+        display: flex;
+    }
+    nav ul{
+        display: none;
+    }
+    /* nav span{
+        display: block;
+    } */
+}
+@media only screen and (min-width: 760px) and (max-width: 900px){
+    header{
+        height: fit-content;
+    }
+    .header-img {
+        display: flex;
+        align-items: center;
+    }
+    .header-img img{
+        width: 60%;
+        margin: 0px auto !important;
+    }
+    .process-section{
+        position: relative;
+        height: 40vh !important;
+        background: #e9ab00;
+        padding: 0px 30px;
+    }
+    .process-section .text{
+        font-size: 30px;
+        color: white;
+        padding: 80px 0px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    header{
+        display: grid;
+        /* flex-wrap: wrap ; */
+    }   
+    header .header-text{
+        margin-top: 0px;
+    }
+    .header-text h1{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .story img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        top: 33rem;
+    }
+    .section-text{
+        padding-top: 10px;
+    }
+}
+@media only screen and (min-width: 430px) and (max-width: 900px) {
+    .story img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        top: 15rem;
+    }
+    .section-text{
+        padding-left: 0px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .process-section{
+        height: fit-content;
+    }
+    .process-section .text{
+        position: relative;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    .section-form form .form-flex{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input{
+        padding: 0px 5px;
+        flex: 1;
+        height: 50px;
+    }
+    textarea{
+        margin: 0% !important;
+    }
+    form button{
+        width: 70%;
+        margin-right: auto !important;
+    }
+}
+@media only screen and (min-width: 430px) and (max-width: 900px) {
+    .process-section{
+        height: 32vh;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .cloths-section {
+        height: fit-content;
+
+    }
+    .section-header{
+        font-size: 50px;
+        top: -30px;
+    }
+    .cloths-section .cards{
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .cloths-section .cards .text{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    /* .section-text{
+        display: none;
+    } */
+}
+@media only screen and (min-width: 421px) and (max-width: 900px) {
+    .cloths-section {
+        height: fit-content;
+
+    }
+    .section-header{
+        font-size: 50px;
+        top: -30px;
+    }
+    .cloths-section .cards{
+        overflow-x: hidden;
+    }
+    .cloths-section .cards .text{
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
 }
